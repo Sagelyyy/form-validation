@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Data Collector</title>
+  </head>
+  <body>
+    <section class="title-area">
+      <h1 class="title">Welcome to The Data Aquisition Service!</h1>
+      <h2 class="sub title">
+        We take your data so other companies dont have to.
+      </h2>
+    </section>
+    <section class="data-collector">
+      <form class="input-form">
+        <label for="email-input">Email:</label>
+        <input
+          class="email-input"
+          type="email"
+          placeholder="my@email.com"
+          required
+        />
+        <label for="country-input">Country:</label>
+        <input class="country-input" placeholder="USA" required />
+        <label for="zip-input">Zip Code:</label>
+        <input
+          class="zip-input"
+          type="number"
+          maxlength="4"
+          minlength="4"
+          max="9999"
+          placeholder="01234"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          placeholder="Password.."
+          class="password"
+          type="password"
+          pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$"
+          required
+        />
+        <label for="password-conf">Confirm Password:</label>
+        <input
+          class="password-conf"
+          type="password"
+          placeholder="Confirm your password.."
+          required
+        />
+        <button class="submitBtn" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</html>
